@@ -1,154 +1,87 @@
 body {
-    background-color: #14213d;
-}
-
-h1 {
-    text-align: center;
-    background-color: #14213d;
-    color: aliceblue;
-}
-h3 {
-    text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
 .container {
-    height: 100vh;
-    width: 100%;
-    background-color: #219ebc;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-.game {
-    height: 80vmin;
-    width:100vmin;
-    background-color: #a2d2ff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    z-index: 1;
-    border-radius: 10px;
-    /* align-items: center; */
+h1 {
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.rock {
-    height: 20vmin;
-    width: 25vmin;
-    margin: 10px;
-    font-size: 80px;
-    border-radius: 10px;
-    background-color: #caf0f8;
-    color: black;
-    border: 2px solid black;
-}
-.paper {
-    height: 20vmin;
-    width: 25vmin;
-    margin: 10px;
-    font-size: 80px;
-    border-radius: 10px;
-    background-color: #caf0f8;
-    color: black;
-    border: 2px solid black;
-}
-.scissor {
-    height: 20vmin;
-    width: 25vmin;
-    margin: 10px;
-    font-size: 80px;
-    border-radius: 10px;
-    background-color: #caf0f8;
-    color: black;
-    border: 2px solid black;
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
-.compchoice {
-    height: 25vmin;
-    width: 30vmin;
-    background-color: #caf0f8;
-    font-size: 80px;
-    border-radius: 10px; 
-    margin-left: 20px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.yourchoice {
-    height: 25vmin;
-    width: 30vmin;
-    font-size: 80px;
-    background-color: #caf0f8;
-    border-radius: 10px; 
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.choice {
+  background: #e0e0e0;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-size: 20px;
 }
 
-.result {
-    height: 10vmin;
-    width: 60vmin;
-    font-size: 30px;
-    background-color: #caf0f8;
-    border-radius: 10px; 
-    margin-top: 20px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* z-index: 3; */
-    /* margin: 10px; */
-    /* padding: 10px; */
+.choice:hover {
+  transform: scale(1.1);
+  background: #d0d0d0;
 }
 
-.result::after , .result::before {
-    content: "";
-    height: 10vmin;
-    width: 60vmin;
-    border-radius: 10px; 
-    position: absolute;
-    background-image: conic-gradient(red,violet,rgb(115, 255, 0), yellow, rgb(255, 213, 0), rgb(115, 0, 255), rgb(27, 161, 219),rgb(0, 255, 4),rgb(177, 144, 238) ,red);
-    padding: 5px;
-    z-index: -1;
-}
-.result::before {
-    filter: blur(1rem);
-    opacity: 0.8;
+.choice i {
+  font-size: 32px;
+  margin-bottom: 5px;
+  display: block;
 }
 
-.text1{
-    font-size: 20px;
-}
-.text2{
-    font-size: 20px;
-}
-.note1 {
-    font-size: 20px;
-    position: absolute;
-    transform: translate(-110px,320px);
-}
-.note2 {
-    font-size: 20px;
-    position: absolute;
-    transform: translate(110px,320px);
+.results {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
 }
 
-.newgame {
-    width: 80%;
-    border-radius: 10px;
-    font-size: 30px;
-    background-color: rgb(137, 248, 233);
-    box-shadow: 0 0 10px ;
-    margin: 10px;
+.icon i {
+  font-size: 40px;
 }
+
+h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #444;
+}
+
+#play-again {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+#play-again:hover {
+  background-color: #0056b3;
+}
+
 .hide {
-    display: none;
+  display: none;
 }
-
 .anime {
     animation: anime 2s forwards;
 }
