@@ -1,0 +1,79 @@
+h2 {
+    background-color: #354f52;
+    color: aqua;
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.mainarea {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#addbtn {
+    background-color: #c6cfce;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#addbtn:active {
+    background-color: rgb(230, 227, 227);
+}
+
+#inp {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.taskarea {
+    /* display: flex;
+    flex-direction: column; */
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    /* border: 5px solid; */
+}
+.maintask {
+    background-color: #b1e1db;
+    font-size: 20px;
+    /* display: inline-block; */
+    width: 100%;
+    margin: 10px;
+    padding: 6px;
+    border: 2px solid ;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.maintask:hover {
+    transform: scale(1.05);
+}
+
+#removebtn {
+    background-color: #edede8;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 30px;
+    font-size: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#upbtn {
+    background-color: #f4f4f2;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 30px;
+    font-size: 10px;
+    transition: all 0.2s ease-in;
+}
+#removebtn:hover,#upbtn:hover {
+    transform: scale(1.05);
+}
+#removebtn:active,#upbtn:active {
+    background-color: rgb(205, 207, 208);
+}
