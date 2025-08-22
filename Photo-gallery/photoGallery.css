@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #333745;
+}
+
+nav {
+    height: 30vh;
+    background: url(dark-mountains.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+}
+
+.heading {
+    width: 100vw;
+    text-align: center;
+    font-size: 60px;
+    margin: 5px;
+    color: aliceblue;
+    font-family: 'roboto slab';
+    position: relative;
+    top: 40%;
+}
+
+.sbtn {
+    position: absolute;
+    background-color: rgb(67, 61, 61);
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    height: 65px;
+    width: 70px;
+    font-size: 35px;
+    margin: 15px;
+}
+.sbtn:active {
+    background-color: gray;
+}
+
+.head {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    transform: translateY(20px);
+}
+.head:hover  {
+    background-color: #9999a1;
+    border: 2px solid grey;
+}
+.head:active {
+    background-color: gray;
+}
+
+.sidebar {
+    background-color: rgba(169, 169, 169,0.8);
+    position: absolute;
+    padding: 5px;
+    margin: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    height: 95vh;
+    width: 20vw;
+    transform: translateX(-110%);
+}
+.transition {
+    transition: all 0.5s ease-in;
+}
+
+.bottom {
+    background-color: #333745;
+    height: 50px;
+    width: 20vw;
+    top: 92%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+.cross {
+    font-size: 30px;
+    position: relative;
+    left: 88%;
+    border-radius: 5px;
+    background-color: darkgray;
+    border: none;
+    margin: 5px;
+}
+.cross:active {
+    transform: scale(1.2);
+}
+
+.icons {
+    position: relative;
+    height: 20px;
+    top: 15%;
+    padding: 5px;
+}
+.icons:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+.para {
+    font-size: 30px;
+    position: absolute;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium';
+    left: 10%;
+    top: 2%;
+}
+.contact {
+    font-size: 15px;
+}
+
+
+.container {
+    /* width: 98vw;
+    height: 80vh; */
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+img {
+    width: 95%;
+    height: 400px;
+    border-radius: 10px;
+    border: 3px solid aliceblue;
+}
+img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.load {
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+}
+.lodbtn {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+}
+.lodbtn:hover {
+    transition: all 0.2s ease-in;
+    transform: scale(1.2);
+}
